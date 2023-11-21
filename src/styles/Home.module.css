@@ -8,6 +8,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
 
 .back{
@@ -58,7 +59,8 @@ color: #D06F00;
     margin: 0;
     position: relative;
     font-size: 20px;
-    color: var(--sec)
+    color: var(--sec);
+    text-decoration: none;
   }
   
 .chamado::after {
@@ -84,7 +86,7 @@ color: #D06F00;
     width: 100%;
   }
 
-.chamado:hover a::before {
+.chamado:hover p::before {
     width: 100%;
   }
 
@@ -118,6 +120,7 @@ color: #D06F00;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
   
 

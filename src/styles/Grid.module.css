@@ -1,8 +1,11 @@
+
+
 .areaDestaque{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .fatos{
