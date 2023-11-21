@@ -10,13 +10,11 @@
 
 }
 
-
 .form{
-    height: 75vh;
-    width: 25vw;
+    height: auto;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 30px 70px;
     background: rgba(0, 0, 0, 0.06);
     mix-blend-mode: normal;
     box-shadow: 4px 4px 20px rgba(3, 0, 0, 0.9);
@@ -31,21 +29,18 @@
     line-height: 76px;
     letter-spacing: -2px;
     margin-top: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 
 .inputForm{
-    display: flex;
-    flex-direction: column;
-    height: 22vh;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 50px; 
 }
 
 .inputGroup{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin: 10px 0px;
 }
 
 .inputGroup label{

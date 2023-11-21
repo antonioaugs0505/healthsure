@@ -10,8 +10,8 @@ export default function Login() {
 
           <div className={styles.inputForm}>
             <div className={styles.inputGroup}>
-              <label htmlFor="user">Usúario</label>
-              <input type="text" id="user" name="user" required />
+              <label htmlFor="email">email</label>
+              <input type="email" id="email" name="mail" required />
             </div>
 
             <div className={styles.inputGroup}>
