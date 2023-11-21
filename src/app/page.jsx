@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import style from "../styles/Grid.module.css";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { AiFillAlert } from "react-icons/ai";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
             </h3>
 
             <button className={styles.chamado}>
-              <p>saiba como proteger aqueles que você ama</p>
+              <a href="#grid">saiba como proteger aqueles que você ama</a>
               <FaLongArrowAltRight
                 className={styles.arrow}
               ></FaLongArrowAltRight>
@@ -27,7 +28,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={style.areaDestaque}>
+      <section id="grid" className={style.areaDestaque}>
         <div className={style.fatos}>
           <AiFillAlert className={style.sirene} />
           <h2>Alguns fatos que você precisa se atentar</h2>
@@ -92,11 +93,12 @@ export default function Home() {
 
       <section className={styles.dicaCadastro}>
         <div className={styles.backCadastro}>
-          <h3 className={styles.textoCadastro}>
+
+          <Link href="/" className={styles.textoCadastro}>
             Acesso a dicas exclusivas, suporte direto e chats interativos.{" "}
-            <span>Cadastre-se</span> agora para conteúdos especiais e uma
+            <span className={styles.span}>Cadastre-se</span> agora para conteúdos especiais e uma
             comunidade ativa.
-          </h3>
+          </Link>
         </div>
       </section>
       
