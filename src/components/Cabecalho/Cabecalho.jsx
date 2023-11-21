@@ -19,7 +19,7 @@ export default function Cabecalho(){
                 <Image className={styles.logo} src="/img/logo.png" width={360} height={300}></Image>
             </figure>
 
-            <Link href="/" className={styles.linkLogin}>LOGIN</Link>
+            <Link href="/login" className={styles.linkLogin}>LOGIN</Link>
 
         </header>
     )

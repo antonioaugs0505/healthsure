@@ -1,0 +1,96 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/backLogin.png);
+    background-repeat: no-repeat;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.form{
+    height: 75vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.06);
+    mix-blend-mode: normal;
+    box-shadow: 4px 4px 20px rgba(3, 0, 0, 0.9);
+    border-radius: 11px;
+}
+
+.form legend{
+    color: var(--branco);
+    text-align: center;
+    font-weight: 300;
+    font-size: 3.7rem;
+    line-height: 76px;
+    letter-spacing: -2px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    height: 22vh;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputGroup label{
+text-transform: uppercase;
+font-weight: 400;
+font-size: 1.6rem;
+letter-spacing: -0.09em;
+color: #FFFFFF;
+}
+
+.inputGroup input{
+    border-radius: 30px;
+    height: 4vh;
+    background-color: #ffffff50;
+    outline: 3px solid #F99417;
+    padding: 0 20px;
+    border: none;
+    font-size: 1rem;
+}
+
+.form button{
+    width: 75%;
+    margin: 0 auto;
+    border: 3px solid #F99417;
+    background-color: var(--principal) ;
+    letter-spacing: -0.09em;
+    color: #FFFFFF;
+    border-radius: 30px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 5px;
+    cursor: pointer
+
+}
+
+.semCadastro p{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #F99417;
+}
+
+.btnCadastro{
+    font-weight: 600;
+    color: #F99417;
+    text-decoration: none;
+}
