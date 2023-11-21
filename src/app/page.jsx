@@ -4,6 +4,7 @@ import style from "../styles/Grid.module.css";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { AiFillAlert } from "react-icons/ai";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -37,56 +38,33 @@ export default function Home() {
 
         <div className={style.gridContainer}>
           <div className={style.grid1}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consectetur rerum ducimus, aliquid optio minus nostrum doloremque
-            magnam incidunt autem tempore nam perferendis magni eius! Harum
-            deserunt optio voluptatum eius. Reprehenderit!
+          <img src="/img/grafico1.png" alt="" />
           </div>
           <div className={style.grid2}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde
-            minus enim eius dolorem libero ut velit porro eveniet distinctio nam
-            vitae nisi quaerat, quos est. Aperiam inventore magni
-            necessitatibus!
+          Áreas urbanas densas, como Sudeste e Nordeste, enfrentam maior incidência de doenças respiratórias no Brasil, influenciadas por poluição em locais como São Paulo e desafios socioeconômicos em certas regiões nordestinas.
           </div>
           <div className={style.grid3}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Perferendis laudantium natus pariatur explicabo, eius amet obcaecati
-            architecto, sunt maiores, aperiam dignissimos. Exercitationem
-            architecto officia pariatur magnam quia cum et libero.
+          Previna a gripe: vacinação anual, lave as mãos, cubra nariz e boca, evite contato com doentes, limpe superfícies, adote hábitos saudáveis. Em surtos, evite aglomerações. Use máscaras em locais lotados. Consulte um profissional de saúde se necessário.
           </div>
           <div className={style.grid4}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            ullam ad laboriosam expedita eum consectetur rem perspiciatis,
-            quisquam temporibus commodi in minima. Dolorum libero eum itaque
-            dolores, earum totam quas.
+          Em termos de regiões mais afetadas, países com condições socioeconômicas desfavoráveis muitas vezes enfrentam maiores desafios no controle de doenças respiratórias. Áreas densamente povoadas, com acesso limitado a cuidados de saúde e infraestrutura sanitária precária, podem ser propícias para a rápida disseminação de doenças respiratórias. Além disso, surtos de doenças respiratórias são comuns em regiões onde as condições climáticas favorecem a sobrevivência e a transmissão de patógenos, tornando essas áreas mais vulneráveis.
+          Estes dados sublinham a importância de esforços globais para melhorar as condições de saúde e proporcionar acesso a cuidados médicos adequados, visando reduzir a incidência e o impacto das doenças respiratórias em comunidades vulneráveis ao redor do mundo.
           </div>
           <div className={style.grid5}>
             COVID-19, influenza (gripe) e dengue são algumas das doenças
             transmissíveis mais contagiosas, impactando milhões globalmente.
           </div>
           <div className={style.grid6}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
-            sapiente eum odio veniam, quidem non provident repudiandae fuga!
-            Totam quidem consectetur animi ipsa corrupti perspiciatis. Rem,
-            atque asperiores. Rem, culpa?
+          <img src="/img/grafico2.png" alt="" />
           </div>
           <div className={style.grid7}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            delectus quis assumenda sit numquam optio autem fugit vel atque? Ex
-            quae, voluptatibus minus eum sint soluta eveniet facere numquam
-            accusantium.
+          Gripe Espanhola (1918), COVID-19 (2019), e H1N1 (2009) são notáveis pandemias respiratórias, moldando a saúde mundial e impulsionando esforços contínuos em preparação e resposta a emergências de saúde.
           </div>
           <div className={style.grid8}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Repellendus incidunt perspiciatis iusto porro. Quidem iusto ut id,
-            cumque vel omnis fugiat inventore facilis! Dolorem quaerat, officia
-            distinctio quibusdam corporis voluptas!
+          Pneumonia e doença pulmonar obstrutiva crônica (DPOC) lideram as mortes por doenças respiratórias no mundo. A pneumonia afeta principalmente crianças e idosos, enquanto a DPOC, associada ao tabagismo, é prevalente em adultos. Essas condições ressaltam a necessidade de estratégias preventivas e acesso a cuidados médicos para reduzir a carga global dessas doenças. A conscientização sobre fatores de risco, vacinação e promoção da saúde respiratória são essenciais para mitigar essas ameaças à saúde.
           </div>
           <div className={style.grid9}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            error cum fuga. Iusto amet, assumenda, a commodi doloremque nobis
-            suscipit nam sequi velit, officia odit ad non reprehenderit
-            aspernatur ut.
+          Ao lidar com doenças respiratórias transmissíveis, a prevenção desempenha um papel crucial na manutenção da saúde. Uma dica fundamental é praticar a higiene das mãos de maneira consistente. Lavar as mãos regularmente com água e sabão por pelo menos 20 segundos pode reduzir significativamente o risco de contrair e espalhar vírus e bactérias respiratórias. Além disso, o uso de desinfetantes para as mãos pode ser uma alternativa quando a lavagem das mãos não é imediatamente possível. Essa simples prática cotidiana é uma barreira eficaz contra várias doenças, incluindo a gripe, resfriados comuns e, mais recentemente, o coronavírus.
           </div>
         </div>
       </section>
@@ -96,12 +74,16 @@ export default function Home() {
 
           <Link href="/" className={styles.textoCadastro}>
             Acesso a dicas exclusivas, suporte direto e chats interativos.{" "}
-            <span className={styles.span}>Cadastre-se</span> agora para conteúdos especiais e uma
+            <Link href="/login/cadastro" className={styles.span}>Cadastre-se</Link> agora para conteúdos especiais e uma
             comunidade ativa.
           </Link>
         </div>
       </section>
       
+
+
+
+
     </main>
   );
 }

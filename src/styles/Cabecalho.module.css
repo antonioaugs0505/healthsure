@@ -17,6 +17,10 @@
     color: var(--sec);
 }
 
+.redes a:hover{
+    color: var(--branco);
+}
+
 
 .logo{
     width:232px;
@@ -31,4 +35,8 @@
     color: var(--sec);
     font-size: 1.8rem;
     text-decoration: none;
+}
+
+.linkLogin:hover{
+    color: var(--branco);
 }

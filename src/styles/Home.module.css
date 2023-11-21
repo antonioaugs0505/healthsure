@@ -151,3 +151,7 @@ text-decoration: none
   color: var(--sec);
   cursor: pointer;
 }
+
+.span:hover{
+  text-shadow: 2px 2px 2px var(--principal);
+}
