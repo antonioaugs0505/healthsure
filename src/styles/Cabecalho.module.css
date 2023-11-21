@@ -1,0 +1,34 @@
+.cabecalho{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+}
+
+.redes{
+    width: 16vw;
+    display: flex;
+    justify-content: space-around
+}
+
+.redes a{
+    font-size: 2rem;
+    color: var(--sec);
+}
+
+
+.logo{
+    width:232px;
+    height:182px;
+}
+
+.linkLogin{
+    width: 16vw;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: -3px ;
+    color: var(--sec);
+    font-size: 1.8rem;
+    text-decoration: none;
+}

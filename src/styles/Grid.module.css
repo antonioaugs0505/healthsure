@@ -1,0 +1,79 @@
+.areaDestaque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.fatos{
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.fatos h2{
+    text-transform: uppercase;
+    color: var(--principal);
+    font-weight: 400;
+    font-size: 2.2rem;
+    letter-spacing: -0.08em;
+    text-decoration-line: underline;
+
+
+color: #FF8D00;
+
+
+}
+
+.sirene{
+    color: var(--principal);
+    font-size: 4rem;
+}
+
+
+
+.gridContainer{
+    width: 90%;
+    display: grid;
+    gap: 30px;
+    grid-auto-columns: 1fr;
+    grid-template-columns:  repeat(8, 1fr);
+    grid-template-rows:  repeat(8, 1fr);
+    grid-template-areas: 
+    "grid1 grid1 grid1 grid2 grid2 grid4 grid4 grid4"
+    "grid1 grid1 grid1 grid2 grid2 grid4 grid4 grid4"
+    "grid1 grid1 grid1 grid3 grid3 grid4 grid4 grid4"
+    "grid1 grid1 grid1 grid3 grid3 grid5 grid5 grid5"
+    "grid6 grid6 grid6 grid6 grid6 grid9 grid9 grid9"
+    "grid6 grid6 grid6 grid6 grid6 grid9 grid9 grid9"
+    "grid7 grid7 grid8 grid8 grid8 grid9 grid9 grid9"
+    "grid7 grid7 grid8 grid8 grid8 grid9 grid9 grid9";
+}
+
+.gridContainer *{
+    border: 3px solid #000;
+    border-radius: 25px ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: -0.08em;
+    color: #000000;
+}
+
+
+.grid1{grid-area: grid1; background-color: #FBA725 ;}
+.grid2{grid-area: grid2; background-color: #FCEACB;}
+.grid3{grid-area: grid3; background-color: #ECAC5C;}
+.grid4{grid-area: grid4; background-color: #FFC45B;}
+.grid5{grid-area: grid5; background-color: #FF9900;}
+.grid6{grid-area: grid6; background-color: #FFC365 ;}
+.grid7{grid-area: grid7; background-color: #E09B37;}
+.grid8{grid-area: grid8; background-color: #FEE9A8;}
+.grid9{grid-area: grid9; background-color: #FFDA97;}
