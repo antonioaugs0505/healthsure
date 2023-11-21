@@ -51,7 +51,7 @@ color: #D06F00;
     cursor: pointer;
   }
   
-.chamado p {
+.chamado a {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 20px;
@@ -72,7 +72,7 @@ color: #D06F00;
     transition: 0.3s ease-out;
   }
   
- .chamado p::before {
+ .chamado a::before {
     position: absolute;
     width: 0%;
     inset: 0;
@@ -84,11 +84,11 @@ color: #D06F00;
     width: 100%;
   }
 
-.chamado:hover p::before {
+.chamado:hover a::before {
     width: 100%;
   }
 
-  .chamado p:hover{
+  .chamado a:hover{
     color: var(--principal);
     transition: 0.3s ease-out;
   }
@@ -126,7 +126,25 @@ color: #D06F00;
   height: 100%;
   width: 100%;
   position:absolute;
+  display: flex;
+  align-items: center;
   background: linear-gradient(90deg, #FF9900 0%, #FFCB8A 32.29%, rgba(231, 194, 138, 0.364583) 75.52%, rgba(255, 206, 132, 0.28) 100%);
 }
 
 
+.textoCadastro {
+width: 60vw;
+font-weight: 400;
+font-size: 2.2rem;
+letter-spacing: -0.05em;
+text-transform: uppercase;
+color: #000000;
+margin-left: 80px;
+text-decoration: none
+}
+
+.span{
+  font-weight: 800;
+  color: var(--sec);
+  cursor: pointer;
+}
