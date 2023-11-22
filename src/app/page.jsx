@@ -72,11 +72,11 @@ export default function Home() {
       <section className={styles.dicaCadastro}>
         <div className={styles.backCadastro}>
 
-          <Link href="/" className={styles.textoCadastro}>
-            Acesso a dicas exclusivas, suporte direto e chats interativos.{" "}
-            <Link href="/login/cadastro" className={styles.span}>Cadastre-se</Link> agora para conteúdos especiais e uma
+          <p className={styles.textoCadastro}>
+            Acesso a dicas exclusivas, suporte direto e chats interativos. 
+             <Link href="/login/cadastro" className={styles.span}>Cadastre-se</Link> agora para conteúdos especiais e uma
             comunidade ativa.
-          </Link>
+          </p>
         </div>
       </section>
       

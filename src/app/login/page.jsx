@@ -11,7 +11,7 @@ export default function Login() {
           <div className={styles.inputForm}>
             <div className={styles.inputGroup}>
               <label htmlFor="email">email</label>
-              <input type="email" id="email" name="mail" required />
+              <input type="email" id="email" name="email" required />
             </div>
 
             <div className={styles.inputGroup}>
