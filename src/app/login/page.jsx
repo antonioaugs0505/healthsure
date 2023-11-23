@@ -127,7 +127,7 @@ export default function Login() {
 
           setTimeout(() => {
             setMsgStatus("");
-            router.push("/");
+            router.push("/principal");
           }, 5000);
         } else {
           setMsgStatus("USUÁRIO E OU SENHA INVÁLIDOS!");
