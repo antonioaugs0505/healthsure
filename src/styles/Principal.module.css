@@ -1,78 +1,75 @@
-.home{
-    background-color: rgb(255, 223, 181);
-    width: 100%;
+.home {
+  background-color: rgb(255, 223, 181);
+  width: 100%;
 }
 
-.card{
-    width: 100%;
-    flex-wrap: wrap;
-    display: flex;
-    padding: 20px;
-    gap: 20px;
-justify-content: space-around;
+.card {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-around;
 }
 
-.cardItem{
-    background: #ffffff49;
-    font-family: "Open sans";
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0px 0px 2px rgba(226, 139, 9, 0.568);
-    gap: 30px;
-    padding: 30px 15px;
-    width: 420px;
+.cardItem {
+  background: #ffffff49;
+  font-family: "Open sans";
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px rgba(226, 139, 9, 0.568);
+  gap: 30px;
+  padding: 30px 15px;
+  width: 420px;
 }
 
-
-.textos{
-    margin: 0 10px;
-    height: 35vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
+.textos {
+  margin: 0 10px;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.textos h3{
-    color: var(--sec);
-    line-height: 1.4rem;
-    font-weight: 600;
+.textos h3 {
+  color: var(--sec);
+  line-height: 1.4rem;
+  font-weight: 600;
 }
 
-.textos h5{
-    opacity: .7;
+.textos h5 {
+  opacity: 0.7;
 }
 
-.textos p{
-    padding: 0 10px;
+.textos p {
+  padding: 0 10px;
 }
 
-.linkMateria{
-    text-decoration: none;
-    background-color: var(--branco);
-    width: 50%;
-    padding: 7px 0;
-    margin: 0 auto;
-    margin-top: 20px;
-    border-radius: 30px;
-    border: 2px solid var(--sec);
-    text-transform: uppercase;
-    font-weight: 600;
-    color: var(--sec);
-    
+.linkMateria {
+  text-decoration: none;
+  background-color: var(--branco);
+  width: 50%;
+  padding: 7px 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 30px;
+  border: 2px solid var(--sec);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--sec);
 }
 
-.linkMateria:hover{
-    background-color: var(--sec);
-    color: var(--branco);
-    border: 2px solid var(--branco);
-    transition: ease-out .5s;
+.linkMateria:hover {
+  background-color: var(--sec);
+  color: var(--branco);
+  border: 2px solid var(--branco);
+  transition: ease-out 0.5s;
 }
 
-.imagem{
-    width: 80%;
+.imagem {
+  width: 80%;
 }
