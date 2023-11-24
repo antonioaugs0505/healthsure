@@ -4,6 +4,7 @@ import styles from "../../styles/Login.module.css";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+
 export default function Login() {
   const router = useRouter();
   const [usuario, setUsuario] = useState({
@@ -12,11 +13,16 @@ export default function Login() {
     senha: "",
   });
   const [msgStatus, setMsgStatus] = useState("");
+  const [entrando, setEntrando] = useState(false)
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
+
+      setEntrando(true)
+
+
       const response = await fetch("http://localhost:8080/healthsureapi/webapi/usuarios/login", {
       method: "POST",
         headers: {
@@ -32,8 +38,8 @@ export default function Login() {
         const user = await response.json();
 
         if (user) {
-          const token = Math.random().toString(36).substring(2) + Math.random().toString(36).substring(2);
-          sessionStorage.setItem("token-user", token);
+          const token = Math.random().toString(20).substring(5) + Math.random().toString(20).substring(5);
+          sessionStorage.setItem("token-item", token);
           process.env.NEXT_PUBLIC_TOKEN_USER = token;
 
           setMsgStatus("Login realizado com SUCESSO!");
@@ -41,7 +47,7 @@ export default function Login() {
           setTimeout(() => {
             setMsgStatus("");
             router.push("/principal");
-          }, 5000);
+          }, 2000);
         } else {
           setMsgStatus("USUÁRIO E OU SENHA INVÁLIDOS!");
           setTimeout(() => {
@@ -51,7 +57,7 @@ export default function Login() {
               email: "",
               senha: "",
             });
-          }, 5000);
+          }, 2000);
         }
       }
     } catch (error) {
@@ -97,7 +103,9 @@ export default function Login() {
             </div>
           </div>
 
-          <button type="submit">Entrar</button>
+          <button type="submit" disabled={entrando}>
+            {entrando ? 'Entrando...' : 'Entrar'}
+          </button>
 
           <div className={styles.semCadastro}>
             <p>

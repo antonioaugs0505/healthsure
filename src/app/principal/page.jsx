@@ -42,7 +42,7 @@ return(
             <div className={styles.card}> {noticia.map((noticia) =>(
 
                 <div className={styles.cardItem} key={noticia.id}>
-                    <Image src={noticia.dsImagem} width={380} alt="imagem" height={260}></Image>
+                    <Image className={styles.imagem} src={noticia.dsImagem} width={380} alt="imagem" height={260}></Image>
                     <div className={styles.textos}>
                     <h3>{noticia.nomeTitulo}</h3>
                     <h5>Publicação - {noticia.dataNoticia}</h5>
@@ -53,10 +53,7 @@ return(
         
             </div>
 
-        </section>
-
-
-         {/* <ChatBot></ChatBot> */}
+        </section> 
 
 
 

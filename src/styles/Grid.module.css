@@ -23,11 +23,8 @@
     font-size: 2.2rem;
     letter-spacing: -0.08em;
     text-decoration-line: underline;
-
-
+text-align: center;
 color: #FF8D00;
-
-
 }
 
 .sirene{
@@ -39,58 +36,71 @@ color: #FF8D00;
 
 .gridContainer{
     width: 90%;
-    display: grid;
-    gap: 30px;
-    grid-auto-columns: 1fr;
-    grid-template-columns:  repeat(8, 1fr);
-    grid-template-rows:  repeat(8, 1fr);
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr  1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr ; 
+    gap: 20px 20px; 
     grid-template-areas: 
-    "grid1 grid1 grid1 grid2 grid2 grid4 grid4 grid4"
-    "grid1 grid1 grid1 grid2 grid2 grid4 grid4 grid4"
-    "grid1 grid1 grid1 grid3 grid3 grid4 grid4 grid4"
-    "grid1 grid1 grid1 grid3 grid3 grid5 grid5 grid5"
-    "grid6 grid6 grid6 grid6 grid6 grid9 grid9 grid9"
-    "grid6 grid6 grid6 grid6 grid6 grid9 grid9 grid9"
-    "grid7 grid7 grid8 grid8 grid8 grid9 grid9 grid9"
-    "grid7 grid7 grid8 grid8 grid8 grid9 grid9 grid9";
-}
+      "grid1 grid1 grid2 grid2 grid4 grid4"
+      "grid1 grid1 grid3 grid3 grid5 grid5"
+      "grid7 grid7 grid7 grid7 grid5 grid5"
+      "grid8 grid8 grid8 grid6 grid6 grid6"; 
+  }
+
 
 .gridContainer *{
-    border: 3px solid #000;
     border-radius: 25px ;
     text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 1.1rem;
+    padding: 10px;
     display: flex;
     align-items: center;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 33px;
-    letter-spacing: -0.08em;
-    color: #000000;
     padding: 20px;
+    line-height: 25px;
 }
-
 
 .grid1{grid-area: grid1; background-color: #FBA725 ;}
 .grid2{grid-area: grid2; background-color: #FCEACB;}
 .grid3{grid-area: grid3; background-color: #ECAC5C;}
 .grid4{grid-area: grid4; background-color: #FFC45B;}
-.grid5{grid-area: grid5; background-color: #FF9900;}
+.grid5{grid-area: grid5; background-color: #f3d19e;}
 .grid6{grid-area: grid6; background-color: #FEE9A8;}
-.grid7{grid-area: grid7; background-color: #E09B37;}
+.grid7{grid-area: grid7; background-color: #eeb259;}
 .grid8{grid-area: grid8; background-color: #ffc477;}
-.grid9{grid-area: grid9; background-color: #FFDA97;}
 
 
-.grid6 img{
-    width: 100%;
-    border: none;
-    height: 300px;
-    padding: 0;
+@media screen and (max-width:1200px) {
+    .gridContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-.grid1 img{
-    width: 100%;
-    border: none;
-    padding: 20px;
-}    
+@media screen and (max-width:660px) {
+ 
+
+
+.fatos{
+
+    width: 80%;
+
+}
+
+.fatos h2{
+    font-size: 1.3rem;
+}
+
+.sirene{
+    color: var(--principal);
+    font-size: 2rem;
+}
+
+.gridContainer *{
+    font-size: .8rem;
+}
+
+}
