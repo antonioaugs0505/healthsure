@@ -7,11 +7,13 @@
     font-family: "Open sans";
 }
 
+
 .redes{
     width: 16vw;
     display: flex;
     justify-content: space-around
 }
+
 
 .redes a{
     font-size: 2rem;
@@ -41,3 +43,67 @@
 .linkLogin:hover{
     color: var(--branco);
 }
+
+.rodape{
+    font-family: "Open sans";
+    background-color: var(--principal);
+    padding: 10px;
+}
+
+.pessoa{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.pessoa div{
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:660px){
+    .cabecalho{
+        width:100% ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Open sans";
+ 
+    }
+
+    .redes{
+        width: 0;
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    
+    .redes a{
+        font-size: 2rem;
+        color: var(--sec);
+    }
+
+    
+.logo{
+    width:200px;
+    height:142px;
+}
+
+    .linkLogin{
+        width: 0;
+        padding-right: 40px;
+    }
+    
+    .pessoa{
+        display: flex;
+       flex-direction: column;
+    }
+}
+
+ 
+ 

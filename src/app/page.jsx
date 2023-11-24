@@ -5,6 +5,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { AiFillAlert } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
+import Rodape from "@/components/Rodapé/Rodape";
 
 export default function Home() {
   return (
@@ -38,51 +39,80 @@ export default function Home() {
 
         <div className={style.gridContainer}>
           <div className={style.grid1}>
-          <img src="/img/grafico1.png" alt="" />
+            <p>
+              
+Doenças transmissíveis são enfermidades causadas por agentes patogênicos, como bactérias, vírus, fungos ou parasitas, que podem ser transmitidos de uma pessoa para outra. Essas doenças se espalham por meio de contato direto ou indireto, muitas vezes facilitadas por condições inadequadas de higiene e saúde pública. A disseminação pode ocorrer por gotículas no ar, contato com superfícies contaminadas e até mesmo por vetores como mosquitos. A prevenção dessas enfermidades inclui medidas simples, como lavagem das mãos, vacinação e práticas sexuais seguras. A conscientização sobre a importância da saúde pública e o acesso a cuidados médicos são essenciais para conter a propagação dessas doenças e promover comunidades mais saudáveis e resilientes. 
+            </p>
           </div>
           <div className={style.grid2}>
-          Áreas urbanas densas, como Sudeste e Nordeste, enfrentam maior incidência de doenças respiratórias no Brasil, influenciadas por poluição em locais como São Paulo e desafios socioeconômicos em certas regiões nordestinas.
+            <p>
+            Diversas doenças transmissíveis, como infeções respiratórias e gastrointestinais, além de zoonoses, são transmitidas de animais para humanos. As DSTs, incluindo HIV e outras, representam uma categoria significativa de preocupação para a saúde pública global. A prevenção é essencial para preservar a vida e promover um mundo mais saudável.
+            </p>
           </div>
           <div className={style.grid3}>
-          Previna a gripe: vacinação anual, lave as mãos, cubra nariz e boca, evite contato com doentes, limpe superfícies, adote hábitos saudáveis. Em surtos, evite aglomerações. Use máscaras em locais lotados. Consulte um profissional de saúde se necessário.
+            <p>
+              Doenças transmissíveis contribuem para altas taxas de mortalidade
+              em várias regiões do mundo. Malaria, HIV/AIDS, tuberculose e
+              infecções respiratórias são responsáveis por óbitos significativos{" "}
+            </p>
           </div>
           <div className={style.grid4}>
-          Em termos de regiões mais afetadas, países com condições socioeconômicas desfavoráveis muitas vezes enfrentam maiores desafios no controle de doenças respiratórias. Áreas densamente povoadas, com acesso limitado a cuidados de saúde e infraestrutura sanitária precária, podem ser propícias para a rápida disseminação de doenças respiratórias. Além disso, surtos de doenças respiratórias são comuns em regiões onde as condições climáticas favorecem a sobrevivência e a transmissão de patógenos, tornando essas áreas mais vulneráveis.
-          Estes dados sublinham a importância de esforços globais para melhorar as condições de saúde e proporcionar acesso a cuidados médicos adequados, visando reduzir a incidência e o impacto das doenças respiratórias em comunidades vulneráveis ao redor do mundo.
+            <p>
+            Diversos vírus, como HIV, influenza e coronavírus, junto com bactérias como Salmonella e Escherichia coli, são comuns e apresentam desafios para a saúde. Vetores, como mosquitos responsáveis por malária e dengue, e animais domésticos, incluindo a raiva, desempenham papéis cruciais na disseminação dessas enfermidades. A prevenção é crucial para um mundo mais saudável.
+            </p>
           </div>
           <div className={style.grid5}>
-            COVID-19, influenza (gripe) e dengue são algumas das doenças
-            transmissíveis mais contagiosas, impactando milhões globalmente.
-          </div>
-          <div className={style.grid6}>
-          <img src="/img/grafico2.png" alt="" />
-          </div>
-          <div className={style.grid7}>
-          Gripe Espanhola (1918), COVID-19 (2019), e H1N1 (2009) são notáveis pandemias respiratórias, moldando a saúde mundial e impulsionando esforços contínuos em preparação e resposta a emergências de saúde.
-          </div>
-          <div className={style.grid8}>
-          Pneumonia e doença pulmonar obstrutiva crônica (DPOC) lideram as mortes por doenças respiratórias no mundo. A pneumonia afeta principalmente crianças e idosos, enquanto a DPOC, associada ao tabagismo, é prevalente em adultos. Essas condições ressaltam a necessidade de estratégias preventivas e acesso a cuidados médicos para reduzir a carga global dessas doenças. A conscientização sobre fatores de risco, vacinação e promoção da saúde respiratória são essenciais para mitigar essas ameaças à saúde.
-          </div>
-          <div className={style.grid9}>
-          Ao lidar com doenças respiratórias transmissíveis, a prevenção desempenha um papel crucial na manutenção da saúde. Uma dica fundamental é praticar a higiene das mãos de maneira consistente. Lavar as mãos regularmente com água e sabão por pelo menos 20 segundos pode reduzir significativamente o risco de contrair e espalhar vírus e bactérias respiratórias. Além disso, o uso de desinfetantes para as mãos pode ser uma alternativa quando a lavagem das mãos não é imediatamente possível. Essa simples prática cotidiana é uma barreira eficaz contra várias doenças, incluindo a gripe, resfriados comuns e, mais recentemente, o coronavírus.
-          </div>
+  <p>
+    A prevenção é fundamental para combater doenças transmissíveis.
+    Medidas básicas de higiene, vacinação, uso de preservativos e
+    controle de vetores são estratégias eficazes. A resposta rápida a
+    surtos é crucial para conter a propagação e salvar vidas.
+  </p>
+</div>
+<div className={style.grid6}>
+  <p>
+    Globalização, urbanização rápida e resistência antimicrobiana
+    representam desafios contemporâneos no controle de doenças
+    transmissíveis. A colaboração internacional e investimentos em
+    sistemas de saúde são essenciais para enfrentar essas ameaças à
+    saúde pública de maneira mais abrangente.
+  </p>
+</div>
+<div className={style.grid7}>
+  <p>
+    Zoonoses são doenças infecciosas que podem ser transmitidas de
+    animais para humanos. Exemplos incluem a gripe aviária, a febre do
+    Nilo Ocidental e a COVID-19. Essas doenças muitas vezes surgem
+    devido à proximidade entre humanos e animais, destacando a
+    importância da vigilância e controle em ambientes onde ambos
+    coexistem para prevenir futuros surtos.
+  </p>
+</div>
+<div className={style.grid8}>
+  Em resposta às pandemias, como a COVID-19, é essencial fortalecer a
+  colaboração internacional, investir em pesquisa e desenvolver
+  estratégias eficazes para lidar com a constante evolução dessas
+  ameaças à saúde global. A união de esforços é vital para a
+  construção de um mundo mais preparado e resiliente diante de
+  desafios sanitários.
+</div>
+
         </div>
       </section>
 
       <section className={styles.dicaCadastro}>
         <div className={styles.backCadastro}>
-
           <p className={styles.textoCadastro}>
-            Acesso a dicas exclusivas, suporte direto e chats interativos. 
-             <Link href="/login/cadastro" className={styles.span}>Cadastre-se</Link> agora para conteúdos especiais e uma
-            comunidade ativa.
+            Acesso a dicas exclusivas, suporte direto e chats interativos.
+            <Link href="/login/cadastro" className={styles.span}>
+              Cadastre-se
+            </Link>{" "}
+            agora para conteúdos especiais e uma comunidade ativa.
           </p>
         </div>
       </section>
-      
 
-
-
+<Rodape></Rodape>
 
     </main>
   );
