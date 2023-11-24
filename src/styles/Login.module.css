@@ -90,6 +90,16 @@ color: #FFFFFF;
     text-decoration: none;
 }
 
-@media screen and(max-width:680px){
+.loginSec{
+    background-color: aquamarine;
+    color: #F99417;
+}
 
+.loginErr{
+    background: #000;
+    color:#fff;
+}
+
+.login{
+   overflow: hidden;
 }
