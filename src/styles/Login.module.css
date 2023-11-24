@@ -1,146 +1,143 @@
-.container{
-    height: 100vh;
-    background-image: url(/img/bac.png);
-    background-repeat: no-repeat;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Open Sans', sans-serif;
+.container {
+  height: 100vh;
+  background-image: url(/img/bac.png);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
 }
 
-.form{
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 70px;
+  background: rgba(255, 255, 255, 0.06);
+  mix-blend-mode: normal;
+  box-shadow: 1px 1px 10px rgba(3, 0, 0, 0.9);
+  border-radius: 11px;
+}
+
+.form legend {
+  color: var(--branco);
+  text-align: center;
+  font-weight: 300;
+  font-size: 3.7rem;
+  line-height: 76px;
+  letter-spacing: -2px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.inputForm {
+  margin-bottom: 50px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px 0px;
+}
+
+.inputGroup label {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: -0.09em;
+  color: #ffffff;
+}
+
+.inputGroup input {
+  border-radius: 30px;
+  height: 4vh;
+  background-color: #ffffff50;
+  outline: 3px solid #f99417;
+  padding: 0 20px;
+  border: none;
+  font-size: 1rem;
+}
+
+.form button {
+  width: 75%;
+  margin: 0 auto;
+  border: 3px solid #f99417;
+  background-color: var(--principal);
+  letter-spacing: -0.09em;
+  color: #ffffff;
+  border-radius: 30px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #fff;
+  color: var(--principal);
+  outline: 2px solid var(--principal);
+}
+
+.form button:active {
+  background-color: #fff;
+  color: var(--principal);
+  outline: 2px solid var(--principal);
+}
+
+.semCadastro p {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: var(--sec);
+}
+
+.btnCadastro {
+  font-weight: 600;
+  color: var(--sec);
+  text-decoration: none;
+}
+
+.btnCadastro {
+  font-weight: 700;
+}
+
+.loginSec {
+  background-color: aquamarine;
+  color: #f99417;
+}
+
+.loginErr {
+  background: #000;
+  color: #fff;
+}
+
+.login {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    background-position: 25%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .form {
     display: flex;
     flex-direction: column;
     padding: 30px 70px;
-    background: rgba(255, 255, 255, 0.06);
     mix-blend-mode: normal;
-    box-shadow: 1px 1px 10px rgba(3, 0, 0, 0.9);
+    box-shadow: none;
     border-radius: 11px;
+  }
 }
 
-.form legend{
-    color: var(--branco);
-    text-align: center;
-    font-weight: 300;
-    font-size: 3.7rem;
-    line-height: 76px;
-    letter-spacing: -2px;
-    margin-top: 20px;
-    margin-bottom: 60px;
-}
-
-.inputForm{
-    margin-bottom: 50px; 
-}
-
-.inputGroup{
+@media screen and (max-width: 380) {
+  .form {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin: 10px 0px;
+    align-items: center;
+  }
 }
-
-.inputGroup label{
-text-transform: uppercase;
-font-weight: 400;
-font-size: 1.6rem;
-letter-spacing: -0.09em;
-color: #FFFFFF;
-}
-
-.inputGroup input{
-    border-radius: 30px;
-    height: 4vh;
-    background-color: #ffffff50;
-    outline: 3px solid #F99417;
-    padding: 0 20px;
-    border: none;
-    font-size: 1rem;
-   
-}
-
-.form button{
-    width: 75%;
-    margin: 0 auto;
-    border: 3px solid #F99417;
-    background-color: var(--principal) ;
-    letter-spacing: -0.09em;
-    color: #FFFFFF;
-    border-radius: 30px;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    padding: 5px;
-    cursor: pointer
-}
-
-.form button:hover{
-    background-color: #fff;
-    color: var(--principal);
-    outline: 2px solid var(--principal);
-}
-
-.form button:active{
-    background-color: #fff;
-    color: var(--principal);
-    outline: 2px solid var(--principal);
-}
-
-.semCadastro p{
-    text-align: center;
-    margin-top: 35px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    color: var(--sec);
-}
-
-.btnCadastro{
-    font-weight: 600;
-    color: var(--sec);
-    text-decoration: none;
-}
-
-.btnCadastro{
-    font-weight: 700;
-}
-
-.loginSec{
-    background-color: aquamarine;
-    color: #F99417;
-}
-
-.loginErr{
-    background: #000;
-    color:#fff;
-}
-
-.login{
-   overflow: hidden;
-}
-
-@media screen and (max-width:830px){
-    .container{
-        background-position: 25%;
-    }
-}
-
-@media screen and (max-width:520px){
-
-    .form{
-        display: flex;
-        flex-direction: column;
-        padding: 30px 70px;
-        mix-blend-mode: normal;
-        box-shadow: none;
-        border-radius: 11px;
-    }
-}
-
-@media screen and (max-width:380) {
-    .form{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
