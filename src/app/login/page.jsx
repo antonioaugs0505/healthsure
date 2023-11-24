@@ -157,12 +157,16 @@ export default function Login() {
             <div className={styles.inputGroup}>
               <label htmlFor="idEmail">email</label>
               <input
+
+              
                 type="email"
                 id="idEmail"
                 name="email"
                 value={usuario.email}
                 onChange={(e) => setUsuario({ ...usuario, email: e.target.value })}
                 required
+
+
               />
             </div>
 
@@ -175,6 +179,8 @@ export default function Login() {
                 value={usuario.senha}
                 onChange={(e) => setUsuario({ ...usuario, senha: e.target.value })}
                 required
+
+
               />
             </div>
           </div>
