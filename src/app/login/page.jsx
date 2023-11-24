@@ -95,6 +95,7 @@ import { useState } from "react";
 export default function Login() {
   const router = useRouter();
   const [usuario, setUsuario] = useState({
+    info: "login",
     email: "",
     senha: "",
   });
@@ -134,6 +135,7 @@ export default function Login() {
           setTimeout(() => {
             setMsgStatus("");
             setUsuario({
+              info: "login",
               email: "",
               senha: "",
             });
