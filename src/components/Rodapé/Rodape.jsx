@@ -1,4 +1,4 @@
-import styles from "../../styles/Cabecalho.module.css";
+import styles from "../../styles/Componentes.module.css";
 
 export default function Rodape() {
   return (
