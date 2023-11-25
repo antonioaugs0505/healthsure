@@ -1,5 +1,5 @@
 "use client";
-import styles from "../../styles/Cabecalho.module.css";
+import styles from "../../styles/Componentes.module.css";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
