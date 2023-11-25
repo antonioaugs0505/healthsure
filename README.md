@@ -1,6 +1,6 @@
 Para instalação e utilização:
 
-Link do projeto da API = https://github.com/CamillaSantana/HealthSur
+Link do projeto da API = https://github.com/CamillaSantana/HealthSure
 
 É necessario abrir no eclipse, rodar a api, para ai sim  ela funcionar na pagina web
 
