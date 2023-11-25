@@ -1,36 +1,21 @@
+Para instalação e utilização:
 
-Chatbot
-<!-- 
-     
+Link do projeto da API = https://github.com/CamillaSantana/HealthSur
 
-<div className={styles.abrir}>
+É necessario abrir no eclipse, rodar a api, para ai sim  ela funcionar na pagina web
 
-<button className={styles.escondido}>
-            <BiSolidCommentDetail className={`${styles.icone} ${styles.iconMsg}`}/>
-            <IoClose className={`${styles.icone} ${styles.iconFechar}`} />
-        </button>
+Link do GitHub do projeto para ver as branchs e versionamento 
+= https://github.com/antonioaugs0505/healthsure
 
+Senhas e Email: 
 
-        <section className={styles.chatbot}>
+É possivel criar um usuario proprio. Porem, caso necessario segue alguns email e senha
 
-                <header>
-                    <h2>ChatBot</h2>
-                </header>
-                <ul className={styles.chatbox}>
-                    <li className={`${styles.chat} ${styles.msgPc}`}>
-                        <FaRobot className={styles.icon}></FaRobot>
-                        <p>Olá! Como posso te ajudar?</p>
-                    </li>
+giochaves77@gmail.com
+giochaves77
 
-                    <li className={`${styles.chat} ${styles.msgUser}`}>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </li>
-                </ul>
+vicentecampos@costela.br
+m2CIvP8t
 
-            <div className={styles.chatInput}>
-                <textarea id="textarea" placeholder="Escreva sua mensagem"></textarea>
-                <MdSend id="enviar" className={styles.send}></MdSend>
-            </div>
-
-
-        </section> </div>  -->
+cleiton@gmail.com
+123456
